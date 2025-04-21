@@ -33,7 +33,7 @@ aws configure
 
 # create repository
 ```bash
-aws ecr create-repository --repository-name <repository-name> --image-scanning-configuration scanOnPush=true --region us-east-2
+aws ecr create-repository --repository-name reponame --image-scanning-configuration scanOnPush=true --region us-east-2
 ```
 
 
