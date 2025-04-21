@@ -1,0 +1,2 @@
+# List all python libraries for the lambda
+transformers[torch]==4.41.2
