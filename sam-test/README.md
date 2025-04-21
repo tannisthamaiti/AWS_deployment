@@ -1,15 +1,20 @@
 # aws-configure (temporary in powershell)
+``` bash
 aws configure list
 Remove-Item Env:\AWS_ACCESS_KEY_ID
 Remove-Item Env:\AWS_SECRET_ACCESS_KEY
 Remove-Item Env:\AWS_SESSION_TOKEN
 Remove-Item Env:\AWS_REGION
 Remove-Item Env:\AWS_DEFAULT_REGION
+```
 
 best to delete everything credentials completely
-
+```bash
 Remove-Item "$env:USERPROFILE\.aws\credentials"
 Remove-Item "$env:USERPROFILE\.aws\config"
+```
+
+```bash
 
       Name                    Value             Type    Location
       ----                    -----             ----    --------
@@ -17,6 +22,8 @@ Remove-Item "$env:USERPROFILE\.aws\config"
 access_key                <not set>             None    None
 secret_key                <not set>             None    None
     region                <not set>             None    None
+
+```
 
 Now configure AWS credentials again
 
