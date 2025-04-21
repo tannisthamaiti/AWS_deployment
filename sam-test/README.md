@@ -27,13 +27,15 @@ secret_key                <not set>             None    None
 
 Now configure AWS credentials again
 
-
+```bash
 aws configure 
+```
 
 # create repository
+```bash
 aws ecr create-repository --repository-name <repository-name> --image-scanning-configuration scanOnPush=true --region us-east-2
+```
 
-sam-test1 is the name of my repository
 
 # clean cloudformation
 aws cloudformation delete-stack --stack-name aws-sam-cli-managed-default --region us-east-2
